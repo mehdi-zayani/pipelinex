@@ -44,6 +44,8 @@ app.use("/echo", echoRoute);
 // General backend info endpoint
 app.use("/info", infoRoute);
 
+import tasksRoute from "./routes/tasks";
+app.use("/tasks", tasksRoute);
 // ---------------------------
 // Export the app for server and tests
 // ---------------------------
